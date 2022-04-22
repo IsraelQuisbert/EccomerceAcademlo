@@ -1,0 +1,8 @@
+esta listo el HTML y CSS
+esta responsivo, aunque no vi mucha diferencia entre
+992 y 1024 px de  width
+
+no tiene nada de JS
+
+el carrito de compras creo que lo modificare y lo colocare entre
+los productos y el footer, para no usar esa ventana auxiliar.

@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*************** NAV *********/
+
+/* nav>div{
+    vertical-align: middle;
+} */
+
+nav div img{
+    height: 50px;
+}
+
+.logo-store ul li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+    /* opacity: 0; este es otro modo de ocultarlo */
+}
+
+input#menu-hamburguesa~ul{
+    background-color: #f9f9fc;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    transition: all .3s linear;
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    right: 0%;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+/*nav de tienda de compras*/
+.store img{
+    height: 30px;
+    margin-top: 10px;
+}
+
+input#store{
+    visibility: hidden;
+    /* opacity: 0; este es otro modo de ocultarlo */
+}
+
+input#store~div{
+    background-color: #1313eb;
+    width: 100%;
+    list-style: none;
+    height: 1000%;
+    position: absolute;
+    left: 100%;
+    transition: all .3s linear;
+}
+
+input#store:checked ~ div{
+    left: 0%;
+    padding-left: 10px;
+}
+
+.nav-store{
+    margin-top: 16px;
+}
+
+
+
+
+
+
+nav {
+    background-color: #f9f9fc;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1.25rem;
+    flex-direction: row;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #313030;
+
+}
+nav a:hover{
+    color: #f03362;
+}
+
+/*******colores y fuentes *************/
+.title p{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+.gray{
+    color: rgb(78, 77, 78);
+}
+
+body{
+    background-color: #f9f9fc;
+}
+
+.title-black{
+    color: rgb(31, 30, 30);
+}
+
+h3{
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/************ HOME **************/
+#home{
+    padding-top: 140px;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.sweat{
+    background-color: white;
+    width: 320px;
+    /* text-align: center; */
+}
+
+.product{
+    justify-content: right;
+    text-align: right;
+    right: 100%;
+    margin: 0 auto;
+} 
+
+.column{
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.column>.gray{
+    padding: 20px 0;
+}
+
+.price{
+    color: #f03362;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button button{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 1.6rem;
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 3px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.button button:hover{
+    background-color: #f03362;
+    
+}
+
+/***********PRODUCTOS ********/
+
+.flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    padding-top: 150px;
+}
+
+.flex li{
+    list-style: none;
+}
+
+.a{
+    border-right: 1px solid;
+}
+
+.flex li:hover{
+    cursor: pointer;
+}
+
+
+
+.list>div>article{
+    margin: 0 30%;
+}
+
+.grid article{
+    padding: 30px 0;
+}
+
+/* grilla de producto*/
+.list>div>article img{
+    width: 200px;
+    background-color: rgb(223, 221, 221);
+    border-radius: 5px;
+}
+
+.price{
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.price h2{
+    font-size: 20px;
+}
+
+.price span{
+    font-size: 14px;
+}
+
+.price h3{
+    font-size: 16px;
+}
+
+.price button{
+    font-size: 1.3rem;
+    color: #313030;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-color: #f03362;
+    transition: .3s;
+}
+
+.price button:hover{
+    background-color: #f03362;
+}
+
+
+
+/************** FOOTER ***********/
+
+
+#footer{
+    background-color: #d1d0d0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: #313030;
+}
+
+.content-grid{
+    padding: 90px 0;
+
+}
+
+.content{
+    padding: 25px 30px;
+}
+
+.content h3{
+    padding: 20px 0;
+}
+
+.social-red ul{
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
+
+.social-red img{
+    padding-right: 20px;
+}
+
+.copy-right{
+    text-align: center;
+    padding: 20px;
+}
+
+
+/********* PANTALLAS ***********/
+
+
+@media only screen and ( min-width: 576px ){
+
+    
+    
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 3rem;
+        justify-content: center;
+    }
+    
+    .b{
+        border-right: 1px solid;
+    }
+
+    .content-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 3rem;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and ( min-width: 767px ){
+    
+    .menu{
+        display: none;
+    }
+    
+    input#menu-hamburguesa~ul{
+        position: static;
+        background-color: transparent;
+        display: flex; 
+    }
+
+    input#menu-hamburguesa ~ ul > li{
+        padding: 0 2rem;
+    }
+    
+    nav>div a:hover{
+        transition: .3s;
+        color: #f03362;
+    }
+
+    input#store~div{
+        /* background-color: #1313eb; */
+        width: 50%;
+    }
+
+    input#store:checked ~ div{
+        left: 50%;
+        padding-left: 10px;
+    }
+
+
+
+    .list>div>article{
+        margin: 0;
+    }
+
+
+
+
+    .home{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+    
+    .flex{
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+    }
+
+
+    .content-grid{
+        display: flex;
+        flex-direction: row;
+    gap: 1rem;
+    
+    }
+}
+
+
+@media only screen and ( min-width: 992px ){
+
+    .home img{
+        width: 400px;
+    }
+
+    .column{
+        width: 500px;
+    }
+
+
+    .title p{
+        font-size: 3rem;
+    }
+
+    .grid{
+        grid-template-columns: repeat(3, 310px);
+    }
+
+    .list>div>article img{
+        width: 300px;
+    }
+    
+    .price{
+        width: 300px;
+    }
+
+}
+
+@media only screen and ( min-width: 992px ){
+
+    .home img{
+        width: 500px;
+    }
+
+    .content-grid{
+        gap: 8rem;
+    }
+
+}
